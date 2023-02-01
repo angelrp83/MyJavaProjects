@@ -1,3 +1,6 @@
+package soccer;
+
+import soccer.models.*;
 
 public class League {
 
@@ -37,6 +40,16 @@ public class League {
 		//Creation team2:
 		Player[] listPlayers2 = {t21,t22,t23,t24,t25,t26,t27,t28,t29,t210,t211};
 		Team team2 = new Team(02,"Brasil",listPlayers2);
+		
+		//Showing the teams
+		System.out.print("\n");
+		System.out.print(team1.getTeamName() + " : ");
+		team1.displayNames();
+		System.out.print("\n");
+		System.out.print(team2.getTeamName() + " : ");
+		team1.displayNames();
+		System.out.print("\n");
+		System.out.print("\n");
 		
 		//Game creation
 		Game game1 = new Game(team1,team2);
