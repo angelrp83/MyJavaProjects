@@ -1,27 +1,28 @@
+package soccer.models;
 import java.time.LocalTime;
 
 public class Goal {
 	
-	private int teamId;
+	private Team team;
 	
-	private int playerId;
+	private Player player;
 	
 	private LocalTime time;
 
-	public int getTeamId() {
-		return teamId;
+	public Team getTeam() {
+		return team;
 	}
 
-	public void setTeamId(int teamId) {
-		this.teamId = teamId;
+	public void setTeam(Team team) {
+		this.team = team;
 	}
 
-	public int getPlayerId() {
-		return playerId;
+	public Player getPlayer() {
+		return player;
 	}
 
-	public void setPlayerId(int playerId) {
-		this.playerId = playerId;
+	public void setPlayer(Player player) {
+		this.player = player;
 	}
 
 	public LocalTime getTime() {
@@ -32,11 +33,13 @@ public class Goal {
 		this.time = time;
 	}
 
-	public Goal(int teamId, int playerId, LocalTime time) {
-		this.teamId = teamId;
-		this.playerId = playerId;
+	public Goal(Team team, Player player, LocalTime time) {
+		this.team = team;
+		this.player = player;
 		this.time = time;
 	}
+
+    
 	
 	
 

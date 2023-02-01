@@ -1,3 +1,4 @@
+package soccer.models;
 
 public class GoalKeeper extends Player {
 	

@@ -1,3 +1,4 @@
+package soccer.models;
 
 public class Midfielder extends Player {
 	

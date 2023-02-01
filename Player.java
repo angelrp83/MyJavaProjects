@@ -1,3 +1,4 @@
+package soccer.models;
 
 public abstract class Player {
 	

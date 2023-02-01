@@ -1,3 +1,4 @@
+package soccer.models;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Random;
@@ -38,7 +39,7 @@ public class Game {
 			Random rn = new Random();
 			int ran = rn.nextInt(10);
 			if (ran >= 8) {
-				Goal goal = new Goal(team.getTeamId(),team.getListOfPlayers()[i].getPlayerId(), LocalTime.now());
+				Goal goal = new Goal(team,team.getListOfPlayers()[i], LocalTime.now());
 				ListOfGoals.add(goal);
 			}
 		}		
@@ -59,7 +60,7 @@ public class Game {
 		
 		if (ListOfGoals.size() > 0) {
 		   for (int i = 0; i < ListOfGoals.size(); i++) {
-			   if (ListOfGoals.get(i).getTeamId() == team1.getTeamId()) {
+			   if (ListOfGoals.get(i).getTeam() == team1) {
 				   count1++;
 			   } else {
 				   count2++;
