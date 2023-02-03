@@ -7,10 +7,11 @@ public class GoalKeeper extends Player {
 	public GoalKeeper(int playerId, String playerName) {
 		super(playerId, playerName);
 	}
-
+    
+	//it is very unlikely that a goalkeeper will score a goal
 	@Override
-	public void play() {
-		System.out.println("My game is to prevent the ball from entering the goal");		
+	public boolean play() {
+		return false;		
 	}
 
 }

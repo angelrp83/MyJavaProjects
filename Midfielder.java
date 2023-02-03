@@ -1,5 +1,7 @@
 package soccer.models;
 
+import java.util.Random;
+
 public class Midfielder extends Player {
 	
 	//We could add some specific fields related to midfielders..
@@ -9,8 +11,12 @@ public class Midfielder extends Player {
 	}
 
 	@Override
-	public void play() {
-		System.out.println("My game is to create plays and give effective passes");		
+	public boolean play() {
+		
+		Random rn = new Random();
+		int ran = rn.nextInt(13);
+		
+		return ran >= 11 ? true : false; // about 15% chance of scoring a goal	
 	}
 
 }

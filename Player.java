@@ -27,7 +27,8 @@ public abstract class Player {
 		this.playerName = playerName;
 	}
 
-	public abstract void play();
+	//returns true if the player score a goal
+	public abstract boolean play();
 		
 
 }

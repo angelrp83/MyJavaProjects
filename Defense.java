@@ -1,5 +1,7 @@
 package soccer.models;
 
+import java.util.Random;
+
 public class Defense extends Player {
 	
 	//We could add some specific fields related to defenses..
@@ -9,8 +11,12 @@ public class Defense extends Player {
 	}
 
 	@Override
-	public void play() {
-		System.out.println("My game is to protect the defensive zone");		
+	public boolean play() {
+		
+		Random rn = new Random();
+		int ran = rn.nextInt(14);
+		
+		return ran == 9 ? true : false; //about 7% chance of scoring a goal
 	}
 
 }

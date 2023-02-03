@@ -1,5 +1,4 @@
 package soccer.models;
-import java.time.LocalTime;
 
 public class Goal {
 	
@@ -7,7 +6,7 @@ public class Goal {
 	
 	private Player player;
 	
-	private LocalTime time;
+	private int time;
 
 	public Team getTeam() {
 		return team;
@@ -25,15 +24,15 @@ public class Goal {
 		this.player = player;
 	}
 
-	public LocalTime getTime() {
+	public int getTime() {
 		return time;
 	}
 
-	public void setTime(LocalTime time) {
+	public void setTime(int time) {
 		this.time = time;
 	}
 
-	public Goal(Team team, Player player, LocalTime time) {
+	public Goal(Team team, Player player, int time) {
 		this.team = team;
 		this.player = player;
 		this.time = time;
